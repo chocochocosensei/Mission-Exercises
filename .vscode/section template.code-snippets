@@ -6,11 +6,21 @@
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
 	// Placeholders with the same ids are connected.
 	// Example:
+	"Start Diary Page": {
+		"scope": "html",
+		"prefix": "dp",
+		"body": [
+		"<!DOCTYPE html>",
+		"html>head>meta:utf+meta:vp+link[href=../style.css]+title{Mission Exercises $CURRENT_MONTH_NAME}^body>section>div.nav-bar>a{HOME}[href='../style.css']^^section>.section-title>h2#entry-date-for-$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE{$CURRENT_MONTH_NAME $CURRENT_DATE, $CURRENT_YEAR ($CURRENT_DAY_NAME)}^.section-activity>.card>.title>h3#entry-title-for-$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE{TITLE}^.content>p{ENTRY}^^.card.class-hours.hidden>.title>h3#hours-for-$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE{Hours for $CURRENT_MONTH_NAME $CURRENT_DATE, $CURRENT_YEAR}^.content>p{Class: }+p{Hours: "
+		],
+		"description": "diary page add } for Emmet"
+	},
 	"Add Diary Entry Section": {
 		"scope": "html",
-		"prefix": "diary",
-		"body": ["<!DOCTYPE html>",
-		"html>head>meta:utf+meta:vp+link[href=../style.css]+title{Mission Exercises $CURRENT_MONTH_NAME $CURRENT_DATE, $CURRENT_YEAR}^body>section>div.nav-bar>a{HOME}[href='../style.css']^^section>.section-title>h2#$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE@$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND{$CURRENT_MONTH_NAME $CURRENT_DATE, $CURRENT_YEAR ($CURRENT_DAY_NAME)}^.section-activity>.card>.title>h3^.content>p^^.card.hidden.hours>.title>h3{Hours}^.content>p{Class: }+p{Hours: "],
-		"description": "add } for diary section"
+		"prefix": "de4dp",
+		"body": [
+		"section>.section-title>h2#entry-date-for-$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE{$CURRENT_MONTH_NAME $CURRENT_DATE, $CURRENT_YEAR ($CURRENT_DAY_NAME)}^.section-activity>.card>.title>h3#entry-title-for-$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE{TITLE}^.content>p{ENTRY}^^.card.class-hours.hidden>.title>h3#hours-for-$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE{Hours for $CURRENT_MONTH_NAME $CURRENT_DATE, $CURRENT_YEAR}^.content>p{Class: }+p{Hours: "
+		],
+		"description": "diary section add } for Emmet"
 	}
 }

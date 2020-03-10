@@ -1,35 +1,20 @@
 body {
     background-color: ivory;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 *.hidden {
     display: none;
 }
 
-section {}
-
 .section-title {
-    border: 10pt red;
-    z-index: 100;
-}
-
-.section-title h2 {
     font-size: smaller;
     text-align: right;
-    float: right;
-    width: auto;
-    font-weight: lighter;
-    font-style: italic;
 }
 
 .section-activity {
-    padding-bottom: 10px;
-}
-
-.section-activity .card .title h3 {
-    padding-top: 10pt;
+    margin: 0 5%;
 }
 
 .section-activity .content p {
