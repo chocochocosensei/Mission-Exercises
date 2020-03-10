@@ -1,0 +1,12 @@
+*.hidden {
+    display: none;
+}
+
+.title {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+body {
+    background-color: ivory;
+}

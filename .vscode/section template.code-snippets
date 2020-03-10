@@ -1,0 +1,16 @@
+{
+	// Place your Mission Exercises workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"Add Diary Entry Section": {
+		"scope": "html",
+		"prefix": "diary",
+		"body": ["<!DOCTYPE html>",
+		"html>head>meta:utf+meta:vp+link[href=../style.css]+title{Mission Exercises $CURRENT_MONTH_NAME $CURRENT_DATE, $CURRENT_YEAR}^body>section>div.nav-bar>a{HOME}[href='../style.css']^^section>.section-title>h2#$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE@$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND{$CURRENT_MONTH_NAME $CURRENT_DATE, $CURRENT_YEAR ($CURRENT_DAY_NAME)}^.section-activity>.card>.title>h3^.content>p^^.card.hidden.hours>.title>h3{Hours}^.content>p{Class: }+p{Hours: "],
+		"description": "add } for diary section"
+	}
+}

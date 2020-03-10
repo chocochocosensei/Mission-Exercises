@@ -1,0 +1,8 @@
+*.hidden {
+    display: none;
+}
+
+.title {
+    color: red;
+    font-weight: bold;
+}
